@@ -92,7 +92,7 @@ Run the corresponding Figure scripts (data paths need to be adjusted first):
 source('Figure1_3.R')
 ```
 
-## Important Notes
+## Notes
 
 1. **Path Configuration**: All paths in the scripts are placeholders and need to be modified according to your actual environment
 2. **Data Format**: Scripts assume input data is in Cell Ranger standard output format
