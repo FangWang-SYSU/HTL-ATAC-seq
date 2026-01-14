@@ -99,11 +99,3 @@ source('Figure1_3.R')
 3. **Parameter Adjustment**: Clustering resolution, dimensionality reduction parameters, etc. need to be adjusted based on actual data
 4. **Dependency Installation**: Ensure all R packages and system tools are properly installed
 
-## Research Content
-
-- **Time Points**: P0 (birth) to P14 (14 days post-birth)
-- **Main Cell Types**:
-  - Epithelium: AT1, AT2
-  - Immune cells
-  - Stromal cells
-  - Endothelial cells
