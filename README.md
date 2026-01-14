@@ -98,4 +98,5 @@ source('Figure1_3.R')
 2. **Data Format**: Scripts assume input data is in Cell Ranger standard output format
 3. **Parameter Adjustment**: Clustering resolution, dimensionality reduction parameters, etc. need to be adjusted based on actual data
 4. **Dependency Installation**: Ensure all R packages and system tools are properly installed
+5. **Test Data**: https://zenodo.org/records/17606479
 
