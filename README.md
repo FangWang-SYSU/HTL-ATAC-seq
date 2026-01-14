@@ -4,7 +4,7 @@ A collection of analysis scripts for single-cell ATAC-seq data during mouse lung
 
 ## Project Description
 
-This repository contains R and Shell scripts for analyzing single-cell ATAC-seq data during mouse lung (HTL) development (P0-P14). The main research areas include:
+This repository contains R and Shell scripts for analyzing single-cell ATAC-seq data during mouse lung development (P0-P14). The main research areas include:
 
 - Chromatin accessibility analysis
 - Cell type annotation and clustering
@@ -38,7 +38,7 @@ HTL-ATAC-seq-main/
 ├── Figure6_AT2.R            # AT2 cell-related analysis
 ├── Figure7.R                # Visualization script for Figure 7
 ├── Supp4_7_01.R            # Supplementary material analysis script 1
-├── Supp4_7_02.R            # Supplementary material analysis script 2 (includes Python code)
+├── Supp4_7_02.R            # Supplementary material analysis script 2
 │
 ├── myFun.R                  # Core utility functions and configuration
 ├── markerlist.R            # Cell type marker gene lists
@@ -49,17 +49,17 @@ HTL-ATAC-seq-main/
 
 ### R Packages
 - **Seurat** - Single-cell analysis framework
-- **Signac** - Single-cell ATAC-seq analysis
-- **ArchR** - Trajectory analysis
+- **Signac**, **SnapATAC2**, **Scanpy** - Single-cell ATAC-seq analysis
 - **JASPAR2024** - Transcription factor database
 - **EnsDb.Mmusculus.v79** - Mouse genome annotation
-- **ggplot2**, **ggsci**, **ComplexHeatmap** - Visualization
+- **ggplot2**, **ggsci**, **ComplexHeatmap** , **ComplexHeatmap** - Visualization
 
 ### Other Tools
 - **Cell Ranger** - 10x Genomics data processing
 - **seqtk** - FASTQ file processing
 - **barcode_splitter** - Barcode splitting tool
-
+  
+R v4.2.1, Python v3.10, Cell Ranger ARC v2.1.0, SnapATAC2 v2.8.0, Seurat v4.4.0, Signac v1.15.0, Hotspot v0.9.1,  clusterProfiler v4.14.0, MACS3 v3.0.3, HOMER v3.12, rGREAT v2.8.0, chromVAR v1.30.1, Scanpy v1.11.4, Cytoscape v3.10.3, Cicero v1.3.9, Monocle3 v1.4.26, DOSE v4.0.0
 ## Usage
 
 ### 1. Data Preprocessing
