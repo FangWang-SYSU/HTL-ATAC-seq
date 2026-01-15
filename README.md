@@ -11,6 +11,31 @@ This repository contains R and Shell scripts for analyzing single-cell ATAC-seq 
 - Transcription factor binding site (TFBS) analysis
 - Developmental trajectory analysis
 - Co-accessibility network analysis
+- 
+## System Requirements
+### Hardware Requirements
+CPU: Minimum 8 cores (16+ cores recommended for Cell Ranger and peak calling).
+RAM: Minimum 128GB (128GB+ recommended for large-scale single-cell integration).
+Non-standard hardware: No specific non-standard hardware is required, though a high-performance computing (HPC) cluster is recommended for the Demultiplexing pipeline.
+### OS Requirements
+Linux: Tested on Ubuntu 20.04/CentOS 7 (required for Shell scripts and Cell Ranger).
+macOS/Windows: R scripts can be run on these systems, but Shell-based preprocessing is Linux-dependent.
+
+## Software Dependencies
+
+### R Packages
+- **Seurat** - Single-cell analysis framework
+- **Signac**, **SnapATAC2**, **Scanpy** - Single-cell ATAC-seq analysis
+- **JASPAR2024** - Transcription factor database
+- **EnsDb.Mmusculus.v79** - Mouse genome annotation
+- **ggplot2**, **ggsci**, **ComplexHeatmap** , **ComplexHeatmap** - Visualization
+
+### Other Tools
+- **Cell Ranger** - 10x Genomics data processing
+- **seqtk** - FASTQ file processing
+- **barcode_splitter** - Barcode splitting tool
+  
+R v4.2.1, Python v3.10, Cell Ranger ARC v2.1.0, SnapATAC2 v2.8.0, Seurat v4.4.0, Signac v1.15.0, Hotspot v0.9.1,  clusterProfiler v4.14.0, MACS3 v3.0.3, HOMER v3.12, rGREAT v2.8.0, chromVAR v1.30.1, Scanpy v1.11.4, Cytoscape v3.10.3, Cicero v1.3.9, Monocle3 v1.4.26, DOSE v4.0.0
 
 ## Directory Structure
 
@@ -45,22 +70,8 @@ HTL-ATAC-seq-main/
 └── colors.R                # Color definition file
 ```
 
-## Dependencies
 
-### R Packages
-- **Seurat** - Single-cell analysis framework
-- **Signac**, **SnapATAC2**, **Scanpy** - Single-cell ATAC-seq analysis
-- **JASPAR2024** - Transcription factor database
-- **EnsDb.Mmusculus.v79** - Mouse genome annotation
-- **ggplot2**, **ggsci**, **ComplexHeatmap** , **ComplexHeatmap** - Visualization
-
-### Other Tools
-- **Cell Ranger** - 10x Genomics data processing
-- **seqtk** - FASTQ file processing
-- **barcode_splitter** - Barcode splitting tool
-  
-R v4.2.1, Python v3.10, Cell Ranger ARC v2.1.0, SnapATAC2 v2.8.0, Seurat v4.4.0, Signac v1.15.0, Hotspot v0.9.1,  clusterProfiler v4.14.0, MACS3 v3.0.3, HOMER v3.12, rGREAT v2.8.0, chromVAR v1.30.1, Scanpy v1.11.4, Cytoscape v3.10.3, Cicero v1.3.9, Monocle3 v1.4.26, DOSE v4.0.0
-## Usage
+## Demo & Instructions for Use
 
 ### 1. Data Preprocessing
 
@@ -92,6 +103,18 @@ Run the corresponding Figure scripts (data paths need to be adjusted first):
 source('Figure1_3.R')
 ```
 
+### 4. Small Dataset Demo
+We provide a subset of data for testing the pipeline.
+
+Test Data: Download from https://zenodo.org/records/17606479
+
+Run Demo:
+
+Place the test data in the Data/ folder.
+
+Run Rscript Figure1_3.R.
+
+
 ## Notes
 
 1. **Path Configuration**: All paths in the scripts are placeholders and need to be modified according to your actual environment
@@ -100,3 +123,5 @@ source('Figure1_3.R')
 4. **Dependency Installation**: Ensure all R packages and system tools are properly installed
 5. **Test Data**: https://zenodo.org/records/17606479
 
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
