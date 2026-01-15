@@ -11,7 +11,7 @@ This repository contains R and Shell scripts for analyzing single-cell ATAC-seq 
 - Transcription factor binding site (TFBS) analysis
 - Developmental trajectory analysis
 - Co-accessibility network analysis
-- 
+
 ## System Requirements
 ### Hardware Requirements
 CPU: Minimum 8 cores (16+ cores recommended for Cell Ranger and peak calling).
